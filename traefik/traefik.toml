@@ -8,9 +8,9 @@
     insecure = true
 
 [entryPoints.web]
-    address = ":80"
+    address = ":81"
 [entryPoints.websecure]
-    address = ":443"
+    address = ":444"
 
 [providers.docker]
     exposedByDefault = false
