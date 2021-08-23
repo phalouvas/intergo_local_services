@@ -4,7 +4,7 @@ services:
     
     traefik:
         container_name: ${COMPOSE_PROJECT_NAME}_traefik
-        image: traefik:2.4.13
+        image: traefik:2.5.1
         ports:
             - "80:80"
             - "8080:8080"
@@ -29,7 +29,7 @@ services:
         image: mariadb:10.6.4
         hostname: mariadb
         volumes:
-        - ./data:/var/lib/mysql
+        - ./mariadb:/var/lib/mysql
         ports:
             - 3306:3306
         environment:
